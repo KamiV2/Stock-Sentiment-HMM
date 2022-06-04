@@ -11,7 +11,6 @@ from config import (
 if __name__ == '__main__':
 
     if len(os.listdir(transformed_dir)) == 1:
-        print('here')
         transform_data()
 
     print('Evaluating News Sentiment Model:')
@@ -20,4 +19,3 @@ if __name__ == '__main__':
     print('Evaluating Tweets Sentiment Model:')
     for stock in STOCKS:
         evaluate_model(stock, 'tweets')
-        
